@@ -11,10 +11,10 @@ stages:
   - job: 'Build'
     displayName: 'Build job'
     pool:
+      name: 'myAgentPool'
       # vmImage: 'ubuntu-20.04'
       # demands:
       # - npm
-      name: 'myAgentPool'
 
     variables:
       wwwrootDir: 'Tailspin.SpaceGame.Web/wwwroot'
